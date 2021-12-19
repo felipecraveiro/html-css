@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+
+            border: 10px solid darkslategray; /*Este é o shorthand do seletor "border". Suas características são inseridas exatamente na ordem vista no comentário acima.*/
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+
+            /*padding: 10px 10px 10px 10px; (Este é o shorthand do seletor "padding". Suas características são inseridas exatamente na ordem vista no comentário acima).*/
+
+            padding: 10px; /* É uma simplificação do shorthand contido no comentário acima. Quando as quatro medidas forem o mesmo valor, basta colocá-lo uma única vez, que este valerá para todos os lados. */
+
+            /*padding: 10px 20px; (Outra variação do mesmo shorthand. Quando são colocados dois valores, significa que as medidas dos extremos serão iguais. Neste exemplo, os lados de cima e baixo terá 10px e direita e esquerda terão 20px).*/
+
+            /* margin: auto; (Para centralizar a caixa.)*/
+
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+
+            /*margin: 20px 20px 40px 20px; Este é o shorthand do seletor "margin". Suas características são inseridas exatamente na ordem vista no comentário acima. */
+
+            margin: 20px auto 40px auto; /* Para centralizar as margens da direita e esquerda, respectivamente. */
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+
+            outline: 5px dashed salmon; /* Este é o shorthand do seletor "outline". Suas características são inseridas exatamente na ordem vista no comentário acima. */
+        }
+
+        a { /*inline-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

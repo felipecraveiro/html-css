@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+            /*Siginifica que não é pra mostrar na página o conteúdo correspondente.*/
+        }
+        /*O seletor acima indica que as configurações serão aplicadas a um parágrafo que é filho, ou seja, que está dentro, de uma div. Este sinal de maior (>), em CSS, serve para indicar que um elemento pertence a outro.*/
+
+        div:hover > p {
+            display: block;
+            /*Quando passar o mouse por cima da DIV, o parágrafo que está dentro dela será mostrado.*/
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo:</p>
+    <div>
+        Passe o mouse aqui.
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo.</p>
+</body>
+</html>

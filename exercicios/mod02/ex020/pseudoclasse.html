@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div {
+            display: inline-block; /*para colocar os blocos lado a lado.*/
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        /* As pseudo-classes são representadas por : (dois pontos). Elas devem estar relacionadas a um elemento ou uma classe e se referem ao estado deste elemento. */
+
+        div:hover {
+            background-color: yellow;
+        }
+        /* "Hover" indica que, ao passar o mouse sobre o elemento, este vai executar as ações propostas. */
+    </style>
+    <!--
+        height = altura
+        width = largura
+
+        border é um shorthand, onde as propriedades são as seguintes, nesta ordem: largura tipo cor
+    -->
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
